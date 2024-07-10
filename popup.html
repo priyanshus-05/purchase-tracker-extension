@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracy</title>
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="./libs/bootstrap.min.css"> <!-- Include your Bootstrap CSS file -->
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1>Tracy</h1>
+            <div class="right-icons">
+              <img id="notification-icon" src="icons/notification.png" class="icon bell-icon" alt="Notifications">
+              <button id="close-button" class="btn btn-danger">X</button>
+            </div>
+          </div>
+          
+    </header>
+    <div class="container">
+        <h2>Here are your current interests</h2>
+        <div class="interests"></div>
+        <div class="tabs">
+            <div id="orders-tab" class="tab active">Orders</div>
+            <div id="wishlist-tab" class="tab">Wishlist</div>
+            <div id="cart-tab" class="tab">Cart</div>
+        </div>
+        <div id="orders" class="tab-content active">
+            <ul id="orders-data"></ul>
+        </div>
+        <div id="wishlist" class="tab-content">
+            <ul id="wishlist-data"></ul>
+        </div>
+        <div id="cart" class="tab-content">
+            <ul id="cart-data"></ul>
+        </div>
+    </div>
+    <script src="./libs/jquery-3.5.1.min.js"></script> <!-- Include your jQuery file -->
+    <script src="./libs/bootstrap.min.js"></script> <!-- Include your Bootstrap JS file -->
+    <script src="popup.js"></script>
+</body>
+</html>
